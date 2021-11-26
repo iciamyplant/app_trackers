@@ -5,9 +5,10 @@ from matplotlib import pyplot as plt
 
 
 df = pandas.read_csv(
-    "EP_Data_Extended.csv", quotechar='"', skipinitialspace=True, low_memory=False
+    "./Data/EP_Data_Extended.csv", quotechar='"', skipinitialspace=True, low_memory=False
 )
 
+print(df)
 handles = df.loc[:, "handle"]
 trackers = df.loc[:, "trackers"]
 
@@ -34,6 +35,7 @@ for el in trackers_permissions:
                 dict_permissions[nb] += 1
             else:
                 dict_permissions[nb] = 1
+
 
 # most_permissions = sorted(dict_permissions.items(), reverse=True, key=lambda t: t[1])
 # most_trackers = sorted(dict_trackers.items(), reverse=True, key=lambda t: t[1])
