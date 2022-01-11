@@ -1,10 +1,14 @@
-# app_trackers
+# Start
 
 ````
-#Add EP_Data_Extended.csv in Work/Data
+#add EP_Data_Extended.csv in Work/Data
 cd Work
 jupyter notebook exodus_datas_work.ipynb #to start
+Work/Trackers.ipynb #work on all trackers
+Work/Location-Trackers.ipynb #work on location trackers
 ````
+Project done with @annemkht and @te-mbu
+
 
 ## Anaconda
 - permet de créer des environnements de travail
